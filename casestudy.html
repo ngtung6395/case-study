@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<audio autoplay>
+    <source src="music/audio-theme/WarriorSong-TheFatRatStasiaEstep-5546000.mp3">
+</audio>
+<div class="header">
+    <h2>Choose your character!</h2>
+
+</div>
+
+<div class="interface">
+    <a href="#" onclick="GameManager.setGameStart('Warrior')">
+        <img src="img/player/warrior.png" alt="warrior">
+        <div>
+            <h3>Warrior</h3>
+            <p>Sven is the bastard son of a Vigil Knight, born of a Pallid Meranth,
+                raised in the Shadeshore Ruins.</p>
+        </div>
+    </a>
+    <a href="#" onclick="GameManager.setGameStart('Human-Mage')">
+        <img src="img/player/human-mage.png" alt="Human-mage">
+        <div>
+            <h3>Human-Mage</h3>
+            <p>I am a beacon of knowledge blazing out across a black sea of ignorance.</p>
+        </div>
+    </a>
+    <a href="#" onclick="GameManager.setGameStart('Wizzard')">
+        <img src="img/player/wizzard.png" alt="Wizzard">
+        <div>
+            <h3>Wizzard</h3>
+            <p>Any mage can cast a spell or two, and a few may even study long enough to become a wizard,
+                but only the most talented are allowed to be recognized as a Magus.</p>
+        </div>
+    </a>
+    <a href="#" onclick="GameManager.setGameStart('God')">
+        <img src="img/player/god.png" alt="God">
+        <div>
+            <h3>God</h3>
+            <p>	Lord of Heaven, father of gods,
+                Zeus treats all the Heroes as if they are his rambunctious, rebellious children.</p>
+        </div>
+    </a>
+    <a href="#" onclick="GameManager.setGameStart('Assasin')">
+        <img src="img/player/assasin.png" alt="Assasin">
+        <div>
+            <h3>Assasin</h3>
+            <p>Lanaya, the Templar Assassin,
+                came to her calling by a path of curious inquiry.</p>
+        </div>
+    </a>
+</div>
+
+<div class="actions">
+
+</div>
+
+<div class="arena">
+
+</div>
+
+<div class="enemy">
+
+</div>
+
+</body>
+<script src="js/gameManager.js"></script>
+<script src="js/player.js"></script>
+<script src="js/enemy.js"></script>
+</html>
