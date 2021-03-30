@@ -7,6 +7,7 @@ function Player(classType,health,mana,strength,agility,speed) {
     this.strength = strength;
     this.agility = agility;
     this.speed = speed;
+
 }
 
 let PlayerMoves = {
@@ -90,6 +91,7 @@ let PlayerMoves = {
                 alert("You lose! Refresh browser to play again");
                 getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
                 getPlayerHealth.innerHTML = 'Health: 0';
+
             }else {
                 getPlayerHealth.innerHTML = 'Health: ' + player.health;
                 let playerAttackValues = playerAttack();

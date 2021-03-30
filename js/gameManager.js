@@ -1,3 +1,5 @@
+
+
 let GameManager = {
     setGameStart: function (classType) {
         this.resetPlayer(classType);
@@ -7,6 +9,7 @@ let GameManager = {
         switch (classType) {
             case "Warrior":
                 player = new Player(classType, 2400, 0, 200, 100, 90);
+
                 break;
             case "Human-Mage":
                 player = new Player(classType, 1800, 0, 100, 150, 200);
@@ -19,6 +22,8 @@ let GameManager = {
                 break;
             case "Assasin":
                 player = new Player(classType, 2100, 0, 80, 250, 150);
+                break;
+            default:
                 break;
         }
         let getInterface = document.querySelector(".interface");
@@ -50,8 +55,10 @@ let GameManager = {
                 break;
             case 1:
                 enemy = enemy01;
+
                 break;
         }
+
         getHeader.innerHTML = '<p> Choose your move </p>';
         getActions.innerHTML = '<a href="#" class="btn-prefight" ' +
             'onclick="PlayerMoves.calcAttack()">Attack!</a>';
